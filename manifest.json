@@ -1,0 +1,15 @@
+{
+	"short_name": "PWAサイト",
+	"name": "サンプルのPWAサイト",
+	"start_url": "https://github.com/Nakano-Ryoko/pwa_sample.git",
+	"display": "standalone",
+	"icons": [
+	{
+	"image/icon.png",
+	"type": "image/png",
+	"size": "192x192"
+	}
+	],
+	"background_color": "#2196F3",
+	"orientation": "portrait"
+}
