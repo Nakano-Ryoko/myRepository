@@ -1,7 +1,7 @@
 {
-	"short_name": "PWAサイト",
-	"name": "サンプルのPWAサイト",
-	"start_url": "https://github.com/Nakano-Ryoko/myRepository.git/index.html",
+	"short_name": "PWA繧ｵ繝ｳ繝励Ν",
+	"name": "PWA繧ｵ繝ｳ繝励Ν",
+	"start_url": "https://nakano-ryoko.github.io/myRepository/",
 	"display": "standalone",
 	"icons": [
 	{
