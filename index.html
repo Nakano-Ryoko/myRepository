@@ -11,7 +11,6 @@
 </head>
 <body>
 	<h1>PWAサンプルサイト</h1>
-	<p><img src="pwalogo.svg" alt="ロゴ" class="example1"></p>
 	<script>
 	if('serviceWorker' in navigator){
 	navigator.serviceWorker.register('sw.js')
@@ -22,15 +21,17 @@
 	</script>
 	<table class="sample">
 		<tr>
-			<td colspan="3" class="headpane">上部ペイン</td>
+			<td colspan="3" class="headpane">上部ペイン
+			<img src="pwalogo.svg" alt="ロゴ" class="example1">
+			</td>
 		</tr>
 		<tr>
 			<td rowspan="3" class="leftpane">左端ペイン
-			<img src="pwalogo.svg" alt="ロゴ">
+			<img src="pwalogo.svg" alt="ロゴ" class="example1">
 			</td>
 			<td             class="centerpane">中央上部</td>
 			<td rowspan="3" class="rightpane">右端ペイン
-			<img src="pwalogo.svg" alt="ロゴ">
+			<img src="pwalogo.svg" alt="ロゴ" class="example1">
 			</td>
 		</tr>
 		<tr>
