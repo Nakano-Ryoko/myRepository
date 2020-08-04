@@ -1,0 +1,11 @@
+@charset 'UTF-8n';
+
+html {
+	font-family: sans-serif;
+	touch-action: manipulation;
+}
+
+pwalogo.svg {
+	width:50%;
+}
+
