@@ -5,9 +5,9 @@ html {
 	touch-action: manipulation;
 }
 
-img.example1 {
+<!--img.example1 {
 	width:100%;
-	height: auto;
+	height: auto; -->
 }
 
 h1{
@@ -31,7 +31,7 @@ table.sample td{
 .rightpane{background-color: #ccffcc; width: 27%;}
 .centerpane{background-color: #ffffcc;}
 
-table.sample td{
+table.sample td {
 	display: block;
 	width: auto;
 }
