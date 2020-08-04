@@ -5,10 +5,10 @@ html {
 	touch-action: manipulation;
 }
 
-img.example1 {
-	width:100%;
-	height: auto;
-}
+//img.example1 {
+//	width:100%;
+//	height: auto;
+//}
 
 h1{
 	color:blue;
