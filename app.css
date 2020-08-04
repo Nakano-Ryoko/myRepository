@@ -31,7 +31,7 @@ table.sample td{
 .rightpane{background-color: #ccffcc; width: 27%;}
 .centerpane{background-color: #ffffcc;}
 
-//table.sample td{
-//	display: block;
-//	width: auto;
-//}
+table.sample td{
+	display: block;
+	width: auto;
+}
