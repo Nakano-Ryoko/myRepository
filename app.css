@@ -31,38 +31,7 @@ table.sample td{
 .rightpane{background-color: #ccffcc; width: 27%;}
 .centerpane{background-color: #ffffcc;}
 
-
-/* 画像サイズの横幅が480pxより小さい場合に適用　*/
-@media screen and (max-width: 480px){
-
-img.example1 {
-	width:100%;
-	height: auto;
-}
-
-h1{
-	color:blue;
-}
-
-table.sample{
-	border: 1px solid black;
-	border-collapse: collapse;
-	width: 100%;
-}
-
-table.sample td{
-	border: 1px solid black;
-	padding: 1em;
-	vertical-align: top;
-}
-
-.headpane {background-color: #ffdddd;}
-.leftpane {background-color: #ccffcc; width: 27%;}
-.rightpane{background-color: #ccffcc; width: 27%;}
-.centerpane{background-color: #ffffcc;}
-
 table.sample td{
 	display: block;
 	width: auto;
-}
 }
