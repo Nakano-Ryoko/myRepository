@@ -16,23 +16,23 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request)
       .then(function(response) {
-        // ƒLƒƒƒbƒVƒ…‚ª‚ ‚Á‚½‚Ì‚ÅƒŒƒXƒ|ƒ“ƒX‚ğ•Ô‚·
+        // ã‚­ãƒ£ãƒƒã‚·ãƒ¥ãŒã‚ã£ãŸã®ã§ãƒ¬ã‚¹ãƒãƒ³ã‚¹ã‚’è¿”ã™
         if (response) {
           return response;
         }
-        // ƒLƒƒƒbƒVƒ…‚ª‚È‚©‚Á‚½‚Ì‚Å’Êí‚Ì fetch ‚ğs‚¤
-        // d—vFƒŠƒNƒGƒXƒg‚ÍƒXƒgƒŠ[ƒ€‚Å‚ ‚èA1“x‚µ‚©“Ç‚İæ‚ê‚È‚¢‚½‚ß•¡»‚µ‚Ü‚·B
-        // ƒuƒ‰ƒEƒU[‚ÌƒtƒFƒbƒ`‚É‰Á‚¦AƒLƒƒƒbƒVƒ…‚Åg—p‚·‚é‚½‚ß2‚Â•K—v‚É‚È‚è‚Ü‚·B
+        // ã‚­ãƒ£ãƒƒã‚·ãƒ¥ãŒãªã‹ã£ãŸã®ã§é€šå¸¸ã® fetch ã‚’è¡Œã†
+        // é‡è¦ï¼šãƒªã‚¯ã‚¨ã‚¹ãƒˆã¯ã‚¹ãƒˆãƒªãƒ¼ãƒ ã§ã‚ã‚Šã€1åº¦ã—ã‹èª­ã¿å–ã‚Œãªã„ãŸã‚è¤‡è£½ã—ã¾ã™ã€‚
+        // ãƒ–ãƒ©ã‚¦ã‚¶ãƒ¼ã®ãƒ•ã‚§ãƒƒãƒã«åŠ ãˆã€ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã§ä½¿ç”¨ã™ã‚‹ãŸã‚2ã¤å¿…è¦ã«ãªã‚Šã¾ã™ã€‚
         var fetchRequest = event.request.clone();
         return fetch(fetchRequest)
           .then(
             function(response) {
-              // —LŒø‚È‰“š‚ğóM‚µ‚½‚©‚Ç‚¤‚©‚ğŠm”F‚µ‚Ü‚·
+              // æœ‰åŠ¹ãªå¿œç­”ã‚’å—ä¿¡ã—ãŸã‹ã©ã†ã‹ã‚’ç¢ºèªã—ã¾ã™
               if(!response || response.status !== 200 || response.type !== 'basic') {
                 return response;
               }
-              // —LŒø‚È‰“š‚ğóM‚µ‚½‚æ‚¤‚È‚Ì‚ÅAƒLƒƒƒbƒVƒ…‚É’Ç‰Á‚µ‚Ä‚¢‚«‚Ü‚·B
-              // d—vFƒŠƒNƒGƒXƒg‚Æ“¯—l‚Ì——R‚É‚æ‚èAƒŒƒXƒ|ƒ“ƒX‚à•¡»‚µ‚Ü‚·B
+              // æœ‰åŠ¹ãªå¿œç­”ã‚’å—ä¿¡ã—ãŸã‚ˆã†ãªã®ã§ã€ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã«è¿½åŠ ã—ã¦ã„ãã¾ã™ã€‚
+              // é‡è¦ï¼šãƒªã‚¯ã‚¨ã‚¹ãƒˆã¨åŒæ§˜ã®ç†ç”±ã«ã‚ˆã‚Šã€ãƒ¬ã‚¹ãƒãƒ³ã‚¹ã‚‚è¤‡è£½ã—ã¾ã™ã€‚
               var responseToCache = response.clone();
               caches.open('cache-v1')
                 .then(function(cache) {
