@@ -2,7 +2,7 @@
 	"short_name": "PWAサンプル",
 	"name": "PWAサンプル",
 	"start_url": "https://nakano-ryoko.github.io/myRepository/",
-	"display": "standalone",
+	"display": "fullscreen",
 	"icons": [
 	{
 	"image/icon.png",
