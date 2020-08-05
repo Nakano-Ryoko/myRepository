@@ -4,9 +4,9 @@ self.addEventListener('install', function(event) {
       .then(function(cache) {
         return cache.addAll([
           '/',
-          'app.css',
-          'app.js',
-          'image/icon.png'
+          '/app.css',
+          '/app.js',
+          '/image/icon.png'
         ]);
       })
   );
