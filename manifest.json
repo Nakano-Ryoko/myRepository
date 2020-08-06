@@ -8,7 +8,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "https://nakano-ryoko.github.io/myRepository/",
+    "start_url": "./?utm_source=homescreen",
     "display": "standalone",
     "theme_color": "#99d9ea"
 }
