@@ -5,7 +5,7 @@
 	"display": "fullscreen",
 	"icons": [
 	{
-	"/image/icon.png",
+	"image/icon.png",
 	"type": "image/png",
 	"size": "192x192"
 	}
