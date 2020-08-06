@@ -6,20 +6,20 @@
 	<link rel="stylesheet" href="app.css">
 	<link rel="manifest" href="manifest.json">
 	<title>PWAサンプルサイト</title>
+	<script>
+	window.addEventListener('load', function() {
+	  if ('serviceWorker' in navigator) {
+ 	   navigator.serviceWorker.register("/serviceWorker.js")
+	      .then(function(registration) {
+ 	       console.log("serviceWorker registed.");
+ 	     }).catch(function(error) {
+ 	       console.warn("serviceWorker error.", error);
+	      });
+	  }
+	});
+	</script>
 </head>
 <body>
-<script>
-window.addEventListener('load', function() {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register("/serviceWorker.js")
-      .then(function(registration) {
-        console.log("serviceWorker registed.");
-      }).catch(function(error) {
-        console.warn("serviceWorker error.", error);
-      });
-  }
-});
-</script>
 	<h1>ＰＷＡサンプルサイト</h1>
 	<table class="sample">
 		<tr>
