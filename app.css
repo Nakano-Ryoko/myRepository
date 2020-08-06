@@ -31,16 +31,7 @@ table.sample td{
 .rightpane{background-color: #ccffcc; width: 27%;}
 .centerpane{background-color: #ffffcc;}
 
-table.sample{
-	display: block;
-	border: none;
-}
-
-table.sample tr{
-	display: inlin;
-}
-
 table.sample td{
-	display: inline-block;
-	margin-bottom: 8px;
+	display: block;
+	width: auto;
 }
