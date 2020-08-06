@@ -3,7 +3,7 @@
     "short_name": "PWAƒTƒ“ƒvƒ‹",
     "icons": [
         {
-            "src": "image/icon.png",
+            "src": "/image/icon.png",
             "sizes": "192x192",
             "type": "image/png"
         }
