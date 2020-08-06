@@ -26,6 +26,18 @@
 	  }
 	});
 	</script>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "81e61a53-021a-4235-8d86-1a88d781a48c",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
 </head>
 <body>
 	<h1>ＰＷＡサンプルサイト</h1>
