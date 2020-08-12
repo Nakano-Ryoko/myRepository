@@ -32,13 +32,3 @@ if ("serviceWorker" in navigator) {
     });
 }
 
-
-//ServiceWorkerの登録が成功した後に発火するイベント
-self.addEventListener("install", function (event) {
-  event.waitUntil(
-    caches.open(event_url).then(async function (cache) {
-      skipWaiting();
-      cache.addAll(urlsToCache);
-    })
-  );
-});
