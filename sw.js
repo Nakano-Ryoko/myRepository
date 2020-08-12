@@ -30,9 +30,6 @@ if ("serviceWorker" in navigator) {
     });
 }
 
-self.addEventListener('fetch', function(event) {
-    console.log(event.request.url);
-  });
 
 //ServiceWorkerの登録が成功した後に発火するイベント
 self.addEventListener("install", function (event) {
