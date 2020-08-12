@@ -1,7 +1,6 @@
 ﻿//ホーム画面にアイコンを表示
 
 self.addEventListener('fetch', function(event) {
-	console.log(event.request.url);
 });
 
 // service-worker.js
