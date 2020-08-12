@@ -34,7 +34,7 @@ if ("serviceWorker" in navigator) {
 //ServiceWorkerの登録が成功した後に発火するイベント
 self.addEventListener("install", function (event) {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(async function (cache) {
+    caches.open(https://nakano-ryoko/myRepository/image/pwalogo.svg).then(async function (cache) {
       skipWaiting();
       cache.addAll(urlsToCache);
     })
