@@ -14,6 +14,3 @@ self.addEventListener('activate', function(e) {
 self.addEventListener('fetch', function(event) {
     console.log(event.request.url);
 
-// 現状では、この処理を書かないとService Workerが有効と判定されないようです
-//self.addEventListener('fetch', function(event) {});
-
